@@ -1,12 +1,14 @@
 [tool.poetry]
 name = "course"
 version = "0.1.0"
-description = "course using crewAI"
-authors = ["Your Name <you@example.com>"]
+description = "Course Creator Agent"
+authors = ["Daniel Hangan <hangandaniel1@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<=3.13"
 crewai = { extras = ["tools"], version = ">=0.61.0,<1.0.0" }
+fastapi = "^0.115.0"
+uvicorn = "^0.30.6"
 
 
 [tool.poetry.scripts]

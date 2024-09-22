@@ -86,7 +86,7 @@ class CourseCrew():
 		return Task(
 			config=self.tasks_config['course_planner_task'],
 			output_json=CourseOutline,	
-			output_file="report.json"
+			# output_file="report.json"
 		)
 
 	@crew
