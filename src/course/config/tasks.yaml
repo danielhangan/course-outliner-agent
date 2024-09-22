@@ -1,0 +1,27 @@
+internet_researcher_task:
+  description: >
+    1. Analyze the provided list of URLs related to {topic}.
+    2. Scrape relevant content from each link, focusing on key information.
+    3. Summarize the main points and data from each source.
+    4. Identify any conflicting information or differing perspectives.
+    5. Compile a list of additional resources or references found.
+    6. Highlight any emerging trends or recent developments in {topic}.
+  expected_output: >
+    A detailed research report with summaries of key information,
+    data points, trends, and a curated list of additional resources.
+  agent: internet_researcher
+
+course_planner_task:
+  description: >
+    1. Identify the main learning objectives for the course on {topic}.
+    2. Determine the target audience and their skill level.
+    3. Create a high-level course structure with modules and lessons.
+    4. Define key concepts and skills to be covered in each module.
+    5. Suggest engaging activities and assessments for each module.
+    6. Outline required resources and materials for the course.
+    7. Outline general resources and materials for the course.
+    Formatted as markdown without '```
+  expected_output: >
+    A comprehensive course plan document with learning objectives,
+    target audience analysis, module structure, and resource list.
+  agent: course_planner
