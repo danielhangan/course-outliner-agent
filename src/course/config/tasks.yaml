@@ -1,3 +1,19 @@
+course_design_task:
+  description: >
+    1. Identify the main learning objectives for the course on {topic}.
+    2. Determine the target audience and their skill level.
+    3. Define of the expected outcome
+    4. Identify the prerequisites for the course.
+    5. Identify the skill level required for the course.
+  expected_output: >
+    A detailed learning objectives document with the following sections:
+    - Learning Objectives
+    - Target Audience
+    - Expected Outcome
+    - Prerequisites
+    - Skill Level
+  agent: course_designer
+
 internet_researcher_task:
   description: >
     1. Analyze the provided list of URLs related to {topic}.
@@ -11,6 +27,22 @@ internet_researcher_task:
     data points, trends, and a curated list of additional resources.
   agent: internet_researcher
 
+relevant_youtube_videos_task:
+  description: >
+    Research relevant youtube videos on the topic of {topic}.
+    Return a list of youtube videos.
+  expected_output: >
+    A list of youtube videos relevant to the topic of {topic}.
+  agent: internet_researcher
+
+relevant_reading_list_task:
+  description: >
+    Research relevant reading list such as blog posts and articles on the topic of {topic}.
+    Return a list of reading list.
+  expected_output: >
+    A list of reading list relevant to the topic of {topic}.
+  agent: internet_researcher
+
 course_planner_task:
   description: >
     1. Identify the main learning objectives for the course on {topic}.
@@ -18,7 +50,7 @@ course_planner_task:
     3. Create a high-level course structure with modules and lessons.
     4. Define key concepts and skills to be covered in each module.
     5. Suggest engaging activities and assessments for each module.
-    6. Outline required resources and materials for the course.
+    6. Identify relevant resources and materials for this lesson. This could be links, readings or youtube vidos. Later to be used for lesson content.
     7. Outline general resources and materials for the course.
     Formatted as markdown without '```
   expected_output: >

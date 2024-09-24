@@ -12,9 +12,9 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs',
+        "topic": 'Generative AI for Software Development',
         "links": [
-            "https://en.wikipedia.org/wiki/Artificial_intelligence"
+            "https://www.deeplearning.ai/courses/generative-ai-for-software-development/"
         ]
     }
     CourseCrew().crew().kickoff(inputs=inputs)
