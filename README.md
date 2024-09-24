@@ -2,6 +2,11 @@
 
 This project provides a structured approach to creating comprehensive course outlines for AI-related topics, with a focus on Large Language Models (LLMs).
 
+## ENV Variables
+
+- OPENAI_API_KEY
+- EXA_API_KEY
+
 ## Features
 
 - Pydantic models for course structure representation
